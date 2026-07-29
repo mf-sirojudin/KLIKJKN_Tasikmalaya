@@ -1,4 +1,6 @@
 const contactOfficeData = [
+  /* Jika ada perubahan data,
+  Silahkan update data dibawah ini */
   {
     id: 1,
 
