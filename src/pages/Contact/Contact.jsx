@@ -4,8 +4,8 @@ import { ChevronRight } from "lucide-react";
 import Navbar from "../../components/layout/Navbar/Navbar";
 import Footer from "../../components/layout/Footer/Footer";
 
-import CareCenterCard from "../../components/Contact/CareCenterCard";
-import OfficeCard from "../../components/Contact/OfficeCard";
+import CareCenterCard from "../../components/contact/CareCenterCard";
+import OfficeCard from "../../components/contact/OfficeCard";
 
 import contactOfficeData from "../../data/contactOfficeData";
 
