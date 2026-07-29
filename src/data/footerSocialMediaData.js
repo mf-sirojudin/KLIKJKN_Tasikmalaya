@@ -1,4 +1,5 @@
 const footerSocialMediaData = [
+  /* Jika ada perubahan data, Silahkan update data dibawah ini. */
   {
     id: 1,
     name: "YouTube",

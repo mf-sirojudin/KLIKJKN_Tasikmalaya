@@ -1,3 +1,5 @@
+/* Jangan mengubah isi file ini,
+kecuali panduan layanan jika ada file terbaru silahkan update link drivenya*/
 import {
   PlayCircle,
   FileText,
@@ -103,7 +105,7 @@ const services = [
     icon: ClipboardList,
     type: "panduan",
     color:"teal",
-    externalLink:
+    externalLink: /*Cukup update link drive saja*/
       "https://drive.google.com/file/d/1lC15uPd3lTeHhiTuwmmkQdXFpZ0NkCkk/view?usp=drive_link",
   },
 ];

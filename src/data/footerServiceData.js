@@ -1,4 +1,6 @@
 const footerServiceData = [
+  /*Jangan mengubah isi file ini,
+  kecuali Panduan Layanan silahkan diupdate jika ada file terbaru dengan ubah link drive*/
   {
     id: 1,
     title: "PANDAWA",

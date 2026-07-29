@@ -1,6 +1,8 @@
 import { FileText } from "lucide-react";
 
 const bpjsBrochures = [
+  /* Jika ada perubahan data, Silahkan update data dibawah ini.
+  Jika ada penambahan data, silahkan tambahkan di bagian akhir sourcecode*/
   {
     id: 1,
     title: "Alat Bantu Kesehatan",
@@ -297,6 +299,9 @@ const bpjsBrochures = [
     actionText: "Buka Brosur",
     url: "https://drive.google.com/file/d/14korpkSQ8k_KL-CIVpDgcSfgNL1ftFyx/view?usp=drive_link",
   },
+
+  /* Silahkan tambahkan data baru dibawah ini,
+  dengan format sesuai dengan diatas */
 ];
 
 export default bpjsBrochures;

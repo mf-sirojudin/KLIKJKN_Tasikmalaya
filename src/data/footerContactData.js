@@ -1,4 +1,5 @@
 const footerContactData = {
+  /* Jika ada perubahan data, Silahkan update data dibawah ini. */
   officeName: "Kantor Cabang Tasikmalaya",
 
   address:

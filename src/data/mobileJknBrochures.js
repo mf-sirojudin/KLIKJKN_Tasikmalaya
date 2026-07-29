@@ -1,6 +1,8 @@
 import { FileText } from "lucide-react";
 
 const mobileJknBrochures = [
+  /* Jika ada perubahan data, Silahkan update data dibawah ini.
+  Jika ada penambahan data, silahkan tambahkan di bagian akhir sourcecode*/
   {
     id: 1,
     title: "Cara Mengatasi Lupa Kata Sandi",
@@ -88,6 +90,10 @@ const mobileJknBrochures = [
     actionText: "Buka Brosur",
     url: "https://drive.google.com/file/d/1onvduvkGla8aFs20Z2G_9I_MwTLUwsQJ/view?usp=drive_link",
   },
+
+  /* Silahkan tambahkan data baru dibawah ini,
+  dengan format sesuai dengan diatas */
+  
 ];
 
 export default mobileJknBrochures;

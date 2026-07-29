@@ -1,4 +1,6 @@
 const bpjsSatuData = [
+  /* Jika ada perubahan data, Silahkan update data dibawah ini.
+  Jika ada penambahan data, silahkan tambahkan di bagian akhir sourcecode*/
   {
     id: 1,
     cardType: "document",
@@ -65,6 +67,10 @@ const bpjsSatuData = [
     phone: "081111160806",
     whatsapp: "https://wa.me/6281111160806",
   },
+
+  /* Silahkan tambahkan data baru dibawah ini,
+  dengan format sesuai dengan diatas */
+  
 ];
 
 export default bpjsSatuData;
