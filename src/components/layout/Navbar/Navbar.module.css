@@ -1,0 +1,283 @@
+.navbar{
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+
+  z-index:9999;
+
+  background:#ffffff;
+
+  border-bottom:1px solid #e5e7eb;
+
+  box-shadow:0 4px 16px rgba(0,0,0,.04);
+
+  backdrop-filter:blur(20px);
+
+  transition:
+    box-shadow .3s ease,
+    background-color .3s ease;
+}
+
+.wrapper {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.bpjsLogo {
+  height: 46px;
+}
+
+.divider {
+  width: 2px;
+  height: 48px;
+  background: #d1d5db;
+}
+
+.portalLogo {
+  height: 42px;
+}
+
+.active{
+position:relative;
+color:var(--primary-blue);
+}
+
+.active::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-8px;
+width:100%;
+height:3px;
+background:#43B649;
+border-radius:10px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.navigation a,
+.dropdownButton {
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.navigation a:hover,
+.dropdownButton:hover {
+  color: var(--primary-blue);
+}
+
+.active {
+  color: var(--primary-blue) !important;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  left: auto;
+  min-width:360px;
+  max-width:420px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.12);
+  overflow: hidden;
+  padding: 10px 0;
+  display: none;
+  z-index: 999;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:.25s;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+.dropdownContent a {
+  display: block;
+  padding: 12px 18px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.dropdownContent::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 28px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  transform: rotate(45deg);
+  box-shadow: -2px -2px 8px rgba(0,0,0,.03);
+}
+
+.dropdownContent a:hover {
+  background: var(--secondary-blue);
+}
+
+.searchButton {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  color: var(--primary-blue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.searchButton:hover {
+  background: #0f5ba7;
+  color: white;
+}
+
+/* =====================================================
+   SCROLLED NAVBAR
+===================================================== */
+
+.navbarScrolled {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================================
+   RESPONSIVE - LAPTOP
+===================================================== */
+
+@media (max-width: 1199px) {
+  .wrapper {
+    height: 82px;
+  }
+
+  .brand {
+    gap: 16px;
+  }
+
+  .bpjsLogo {
+    height: 42px;
+  }
+
+  .portalLogo {
+    height: 38px;
+  }
+
+  .divider {
+    height: 42px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+  .wrapper {
+    height: 76px;
+  }
+
+  .brand {
+    gap: 14px;
+  }
+
+  .bpjsLogo {
+    height: 38px;
+  }
+
+  .portalLogo {
+    height: 34px;
+  }
+
+  .divider {
+    height: 38px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+  .wrapper {
+    height: 72px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .bpjsLogo {
+    height: 34px;
+  }
+
+  .portalLogo {
+    height: 30px;
+  }
+
+  .divider {
+    height: 32px;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+  .wrapper {
+    height: 68px;
+  }
+
+  .bpjsLogo {
+    height: 30px;
+  }
+
+  .portalLogo {
+    height: 28px;
+  }
+
+  .divider {
+    height: 28px;
+  }
+}

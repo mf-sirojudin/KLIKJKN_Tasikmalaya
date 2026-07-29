@@ -1,0 +1,368 @@
+/* =====================================================
+   MOBILE HAMBURGER
+===================================================== */
+
+.mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 998;
+}
+
+.showOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =====================================================
+   DRAWER
+===================================================== */
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  max-width: 100%;
+  height: 100dvh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.35s ease;
+  box-shadow: -10px 0 35px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+  overflow-y: auto;
+  padding-bottom: 24px;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.open {
+  right: 0;
+}
+
+.drawer::-webkit-scrollbar{
+  width:6px;
+}
+
+.drawer::-webkit-scrollbar-thumb{
+  background:#C9CDD4;
+  border-radius:10px;
+}
+
+.drawer::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+/* =====================================================
+   DRAWER HEADER
+===================================================== */
+
+.drawerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 24px;
+  border-bottom: 1px solid var(--border);
+  background: #ffffff;
+}
+
+.drawerLogo {
+  height: 100px;
+  width: 100%;
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px;
+  flex: 1;
+  min-height:0;
+  overflow-y:auto;
+}
+
+.navigation > a {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.navigation > a:hover {
+  color: var(--primary-blue);
+}
+
+/* =====================================================
+   SEARCH BUTTON
+===================================================== */
+
+.searchButton {
+  margin: 24px;
+  margin-top:auto;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  border-radius: 14px;
+  background: var(--primary-blue);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.searchButton:hover {
+  background: #0b4d90;
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.searchWrapper{
+  width: 100%;
+  padding:20px 20px 24px;
+}
+
+.searchForm{
+  width:100%;
+  border: 1px solid #0045b3;
+  border-radius:999px;
+
+  display:flex;
+  align-items:center;
+}
+
+.searchInputWrapper{
+
+  width:100%;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  height:52px;
+
+  padding:0 18px;
+
+  background:#FFFFFF;
+
+  border:1px solid #E5E7EB;
+
+  border-radius:999px;
+
+  box-sizing:border-box;
+
+  transition:
+    border-color .25s,
+    box-shadow .25s;
+
+}
+
+.searchIconButton{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  width:25px;
+  height:25px;
+
+  border:none;
+  background:transparent;
+
+  color:#0045b3;
+
+  cursor:pointer;
+
+  border-radius:50%;
+
+  transition:.25s;
+
+  flex-shrink:0;
+
+}
+
+.searchIconButton:hover{
+
+  color:var(--primary-blue);
+
+  background:#EEF5FF;
+
+}
+
+.searchIconButton:active{
+
+  transform:scale(.95);
+
+}
+
+.searchInputWrapper:focus-within{
+
+  border-color:var(--primary-blue);
+
+  box-shadow:
+    0 0 0 3px rgba(0,91,172,.12);
+
+}
+
+.searchInputWrapper svg{
+
+  color:#94A3B8;
+
+  flex-shrink:0;
+
+}
+
+.searchInput{
+
+  flex:1;
+
+  width:100%;
+
+  border:none;
+  outline:none;
+
+  background:transparent;
+
+  appearance:none;
+  -webkit-appearance:none;
+
+  font-size:15px;
+
+  color:#374151;
+  min-width:0;
+
+}
+
+.searchInput:focus{
+
+  border:none !important;
+  outline:none;
+  box-shadow:none;
+
+}
+
+.searchInput::-ms-clear{
+  display:none;
+}
+
+.searchInput::-webkit-search-decoration,
+.searchInput::-webkit-search-cancel-button,
+.searchInput::-webkit-search-results-button,
+.searchInput::-webkit-search-results-decoration{
+
+  display:none;
+
+}
+
+.searchInput::placeholder{
+
+  color:#9CA3AF;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+/* Desktop */
+
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+
+  .drawer {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+/* Tablet & Mobile */
+
+@media (max-width: 991px) {
+  .mobile {
+    display: flex;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .drawer {
+    width: 300px;
+  }
+
+  .drawerHeader {
+    padding: 24px 20px;
+  }
+
+  .drawerLogo {
+    height: 36px;
+  }
+
+  .navigation {
+    padding: 12px 20px;
+  }
+
+  .searchButton {
+    margin: 20px;
+  }
+
+  .searchWrapper{
+    padding:18px 20px 0;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 576px) {
+  .drawer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .drawerHeader {
+    padding: 20px 18px;
+  }
+
+  .navigation {
+    padding: 10px 18px;
+  }
+
+  .searchWrapper{
+    padding:16px 18px 0;
+  }
+
+  .searchButton {
+    margin: 18px;
+    height: 48px;
+  }
+}

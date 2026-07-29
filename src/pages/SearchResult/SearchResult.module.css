@@ -1,0 +1,445 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page{
+  padding:50px 0 90px;
+
+  min-height:100vh;
+
+  background:#F8FBFF;
+}
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top: 60px;
+
+  margin-bottom:24px;
+
+  font-size:14px;
+  color:#667085;
+}
+
+.breadcrumb a{
+  color:#005BAC;
+  transition:.3s;
+}
+
+.breadcrumb a:hover{
+  color:#00488A;
+}
+
+.breadcrumb strong{
+  color:#153A6F;
+  font-weight:600;
+}
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.backButton{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  margin-bottom:28px;
+
+  color:#005BAC;
+
+  font-size:15px;
+  font-weight:600;
+
+  text-decoration:none;
+
+  transition:.3s;
+}
+
+.backButton:hover{
+  color:#00488A;
+
+  transform:translateX(-4px);
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+  margin-bottom:34px;
+
+  padding:42px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #EDF5FF 0%,
+      #F8FBFF 100%
+    );
+
+  border:1px solid #DCEAFB;
+
+  border-radius:28px;
+
+}
+
+.heroContent{
+
+  max-width:760px;
+
+}
+
+.searchIcon{
+
+  width:64px;
+  height:64px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:22px;
+
+  border-radius:18px;
+
+  background:#005BAC;
+
+  color:#FFFFFF;
+
+}
+
+.title{
+
+  font-size:38px;
+  font-weight:700;
+  line-height:1.25;
+
+  color:#153A6F;
+
+  margin-bottom:16px;
+
+}
+
+.description{
+
+  font-size:17px;
+  line-height:1.8;
+
+  color:#667085;
+
+}
+
+.description strong{
+
+  color:#005BAC;
+
+}
+
+.total{
+
+  display:inline-block;
+
+  margin-top:18px;
+
+  padding:8px 18px;
+
+  border-radius:999px;
+
+  background:#EAF4FF;
+
+  color:#005BAC;
+
+  font-size:14px;
+  font-weight:600;
+
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  gap:24px;
+
+}
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.emptyState{
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  padding:90px 20px;
+
+  background:#FFFFFF;
+
+  border:1px solid #E8EEF5;
+
+  border-radius:24px;
+
+}
+
+.emptyIcon{
+
+  font-size:64px;
+
+  margin-bottom:22px;
+
+}
+
+.emptyState h2{
+
+  font-size:28px;
+  font-weight:700;
+
+  color:#153A6F;
+
+  margin-bottom:16px;
+
+}
+
+.emptyState p{
+
+  max-width:520px;
+
+  font-size:16px;
+  line-height:1.8;
+
+  color:#667085;
+
+}
+
+.emptyState strong{
+
+  color:#005BAC;
+
+}
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (max-width:1200px){
+
+.grid{
+
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+}
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:991px){
+
+.page{
+
+padding:42px 0 80px;
+
+}
+
+.hero{
+
+padding:36px;
+
+}
+
+.title{
+
+font-size:32px;
+
+}
+
+.description{
+
+font-size:16px;
+
+}
+
+.grid{
+
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+gap:20px;
+
+}
+
+.emptyState{
+
+padding:70px 20px;
+
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+.page{
+
+padding:35px 0 70px;
+
+}
+
+.hero{
+
+padding:28px;
+
+border-radius:22px;
+
+}
+
+.searchIcon{
+
+width:58px;
+height:58px;
+
+margin-bottom:18px;
+
+}
+
+.title{
+
+font-size:28px;
+
+}
+
+.description{
+
+font-size:15px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.emptyIcon{
+
+font-size:52px;
+
+}
+
+.emptyState h2{
+
+font-size:24px;
+
+}
+
+.emptyState p{
+
+font-size:15px;
+
+}
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width:576px){
+
+.page{
+
+padding:30px 0 60px;
+
+}
+
+.hero{
+
+padding:22px;
+
+}
+
+.searchIcon{
+
+width:54px;
+height:54px;
+
+border-radius:16px;
+
+}
+
+.title{
+
+font-size:24px;
+
+}
+
+.description{
+
+font-size:14px;
+
+line-height:1.7;
+
+}
+
+.total{
+
+font-size:13px;
+
+padding:7px 14px;
+
+}
+
+.emptyState{
+
+padding:60px 16px;
+
+border-radius:20px;
+
+}
+
+.emptyIcon{
+
+font-size:46px;
+
+}
+
+.emptyState h2{
+
+font-size:22px;
+
+}
+
+.emptyState p{
+
+font-size:14px;
+
+}
+
+}

@@ -1,0 +1,355 @@
+/* =====================================================
+   CONTACT PAGE
+===================================================== */
+
+.page{
+  padding:50px 0 90px;
+  min-height:100vh;
+  background:#F8FBFF;
+}
+
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+
+  margin-top:60px;
+  margin-bottom:24px;
+
+  font-size:14px;
+  color:#667085;
+}
+
+.breadcrumb a{
+  color:#005BAC;
+  transition:.3s;
+}
+
+.breadcrumb a:hover{
+  color:#00488A;
+}
+
+.breadcrumb strong{
+  color:#153A6F;
+  font-weight:600;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+  padding:36px 42px;
+  margin-bottom:24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #EDF5FF 0%,
+      #F8FBFF 100%
+    );
+
+  border:1px solid #DCEAFB;
+  border-radius:28px;
+}
+
+.heroContent{
+  max-width:1000px;
+}
+
+.title{
+  margin:0 0 12px;
+
+  font-size:40px;
+  font-weight:700;
+  line-height:1.25;
+
+  color:#153A6F;
+}
+
+.title::after{
+  content:"";
+  display:block;
+
+  width:72px;
+  height:4px;
+
+  margin-top:14px;
+
+  border-radius:999px;
+  background:#34A853;
+}
+
+.description{
+  margin:0;
+
+  font-size:17px;
+  line-height:1.8;
+
+  color:#667085;
+}
+
+/* =====================================================
+   CARE CENTER
+===================================================== */
+
+.careCenterSection{
+  padding:0;
+
+  margin:16px 0 20px;
+}
+
+/* =====================================================
+   OFFICE SECTION
+===================================================== */
+
+.officeSection{
+  padding:0;
+
+  margin-top:20px;
+}
+
+.sectionHeader{
+  margin-bottom:24px;
+}
+
+.sectionHeader h2{
+  margin:0 0 10px;
+
+  color:#153A6F;
+
+  font-size:30px;
+  font-weight:700;
+}
+
+.sectionHeader p{
+  margin:0;
+
+  color:#667085;
+
+  font-size:16px;
+  line-height:1.7;
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.officeGrid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  gap:24px;
+}
+
+/* =====================================================
+   LARGE LAPTOP
+===================================================== */
+
+@media (max-width:1200px){
+
+.page{
+  padding:42px 0 84px;
+}
+
+.hero{
+  padding:42px;
+}
+
+.title{
+  font-size:36px;
+}
+
+.careCenterSection{
+  margin-bottom:24px;
+}
+
+.officeSection{
+  margin-bottom:24px;
+}
+
+.sectionHeader{
+  margin-bottom:22px;
+}
+
+.officeGrid{
+  grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+  gap:22px;
+}
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:991px){
+
+.page{
+  padding:40px 0 80px;
+}
+
+.breadcrumb{
+  margin-top:52px;
+  margin-bottom:22px;
+}
+
+.hero{
+  padding:32px;
+  margin-bottom:24px;
+}
+
+.title{
+  font-size:32px;
+}
+
+.description{
+  font-size:16px;
+}
+
+.careCenterSection{
+  margin-bottom:24px;
+}
+
+.officeSection{
+  margin-bottom:24px;
+}
+
+.sectionHeader{
+  margin-bottom:22px;
+}
+
+.sectionHeader h2{
+  font-size:28px;
+}
+
+.sectionHeader p{
+  font-size:15px;
+}
+
+.officeGrid{
+  grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+  gap:20px;
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+.page{
+  padding:35px 0 70px;
+}
+
+.breadcrumb{
+  margin-top:48px;
+  margin-bottom:20px;
+
+  font-size:13px;
+}
+
+.hero{
+  padding:24px;
+  margin-bottom:20px;
+
+  border-radius:22px;
+}
+
+.title{
+  font-size:28px;
+}
+
+.description{
+  font-size:15px;
+}
+
+.careCenterSection{
+  margin-bottom:20px;
+}
+
+.officeSection{
+  margin-bottom:20px;
+}
+
+.sectionHeader{
+  margin-bottom:18px;
+  text-align:center;
+}
+
+.sectionHeader h2{
+  font-size:24px;
+}
+
+.sectionHeader p{
+  font-size:15px;
+}
+
+.officeGrid{
+  grid-template-columns:1fr;
+  gap:18px;
+}
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width:576px){
+
+.page{
+  padding:30px 0 60px;
+}
+
+.hero{
+  padding:22px;
+}
+
+.title{
+  font-size:24px;
+}
+
+.description{
+  font-size:14px;
+  line-height:1.7;
+}
+
+.careCenterSection{
+  margin-bottom:18px;
+}
+
+.officeSection{
+  margin-bottom:18px;
+}
+
+.sectionHeader{
+  margin-bottom:16px;
+}
+
+.sectionHeader h2{
+  font-size:22px;
+}
+
+.sectionHeader p{
+  font-size:14px;
+}
+
+.officeGrid{
+  gap:16px;
+}
+
+}

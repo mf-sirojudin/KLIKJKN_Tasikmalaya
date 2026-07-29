@@ -1,0 +1,497 @@
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer{
+  margin-top:40px;
+
+  background:#FFFFFF;
+
+  border-top:1px solid #E6EEF8;
+}
+
+/* =====================================================
+   MAIN FOOTER
+===================================================== */
+
+.grid{
+
+  display:grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1.35fr
+    1fr;
+
+  gap:90px;
+
+  padding:52px 0 36px;
+
+}
+
+/* =====================================================
+   COLUMN
+===================================================== */
+
+.column{
+
+  display:flex;
+
+  flex-direction:column;
+
+}
+
+.heading{
+
+  font-size:19px;
+
+  font-weight:700;
+
+  color:#153A6F;
+
+  line-height:1.4;
+
+  margin-bottom:18px;
+
+}
+
+/* =====================================================
+   OFFICE
+===================================================== */
+
+.logo{
+
+  width:330px;
+
+  max-width:100%;
+
+  height:auto;
+
+  margin-bottom:14px;
+
+}
+
+.address{
+
+  margin-bottom:16px;
+  padding-right: 40px;
+
+  color:#667085;
+
+  line-height:1.65;
+
+  font-size:15px;
+
+}
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contactItem{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  margin-bottom:14px;
+
+  color:#667085;
+
+  text-decoration:none;
+
+  transition:
+    color .25s,
+    transform .25s;
+
+}
+
+.contactItem svg{
+
+  margin-top:0;
+
+  color:#005BAC;
+
+  align-self:center;
+
+  flex-shrink:0;
+
+  font-size:18px;
+
+}
+
+.contactItem span{
+
+  line-height:1.4;
+  display:block;
+
+  font-size:15px;
+
+}
+
+.contactItem:hover{
+
+  color:#005BAC;
+  transform:translateX(3px);
+
+}
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+.link{
+
+  display:block;
+
+  margin-bottom:14px;
+
+  color:#667085;
+
+  text-decoration:none;
+
+  font-size:15px;
+
+  transition:
+    color .25s,
+    transform .25s;
+
+}
+
+.link:hover{
+
+  color:#005BAC;
+
+  transform:translateX(3px);
+
+}
+
+/* =====================================================
+   SOCIAL
+===================================================== */
+
+.socialMedia{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  margin-top:8px;
+
+}
+
+.socialMedia a{
+
+  width:42px;
+
+  height:42px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:#F4F8FD;
+
+  color:#005BAC;
+
+  font-size:20px;
+
+  transition:
+    background .25s,
+
+    color .25s,
+
+    transform .25s,
+
+    box-shadow .25s;
+
+}
+
+.socialMedia a:hover{
+
+  background:#005BAC;
+
+  color:#FFFFFF;
+
+  transform:translateY(-4px);
+
+  box-shadow:
+    0 10px 24px rgba(0,91,172,.22);
+
+}
+
+/* =====================================================
+   SCHEDULE
+===================================================== */
+
+.schedule{
+
+  display:flex;
+
+  flex-direction:column;
+
+  margin-bottom:20px;
+
+}
+
+.schedule strong{
+
+  color:#153A6F;
+
+  font-size:15px;
+
+  margin-bottom:6px;
+
+}
+
+.schedule span{
+
+  color:#667085;
+
+  font-size:15px;
+
+}
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.bottom{
+
+  background:#005BAC;
+
+}
+
+.bottom p{
+
+  margin:0;
+
+  padding:11px 0;
+
+  text-align:center;
+
+  color:#FFFFFF;
+
+  font-size:13px;
+
+  font-weight:500;
+
+  letter-spacing:.2px;
+
+}
+
+/* =====================================================
+   LARGE TABLET
+===================================================== */
+
+@media (max-width:1200px){
+
+.grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:40px;
+
+}
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:991px){
+
+.footer{
+
+margin-top:70px;
+
+}
+
+.grid{
+
+padding:48px 0 36px;
+
+gap:36px;
+
+}
+
+.logo{
+
+width:290px;
+
+}
+
+.heading{
+
+font-size:19px;
+
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+.footer{
+
+margin-top:60px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+gap:34px;
+
+padding:42px 0 32px;
+
+}
+
+.column{
+
+padding-bottom:6px;
+
+border-bottom:1px solid #EDF2F7;
+
+}
+
+.column:last-child{
+
+border-bottom:none;
+
+padding-bottom:0;
+
+}
+
+.logo{
+
+width:250px;
+
+}
+
+.heading{
+
+margin-bottom:16px;
+
+font-size:18px;
+
+}
+
+.address{
+
+font-size:14px;
+
+margin-bottom:16px;
+
+}
+
+.link{
+
+font-size:14px;
+
+margin-bottom:12px;
+
+}
+
+.contactItem{
+
+margin-bottom:12px;
+
+}
+
+.contactItem span{
+
+font-size:14px;
+
+}
+
+.schedule strong{
+
+font-size:14px;
+
+}
+
+.schedule span{
+
+font-size:14px;
+
+}
+
+.socialMedia{
+
+margin-top:12px;
+
+}
+
+.bottom p{
+
+font-size:13px;
+
+padding:16px 12px;
+
+line-height:1.6;
+
+}
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width:480px){
+
+.grid{
+
+padding:36px 0 28px;
+
+gap:30px;
+
+}
+
+.logo{
+
+width:220px;
+
+}
+
+.socialMedia{
+
+justify-content:flex-start;
+
+gap:10px;
+
+}
+
+.socialMedia a{
+
+width:38px;
+
+height:38px;
+
+font-size:18px;
+
+}
+
+.bottom p{
+
+font-size:12px;
+
+}
+
+}

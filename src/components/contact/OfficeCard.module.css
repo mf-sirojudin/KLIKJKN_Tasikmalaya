@@ -1,0 +1,396 @@
+/* =====================================================
+   OFFICE CARD
+===================================================== */
+
+.card{
+
+  display:flex;
+  flex-direction:column;
+
+  height:100%;
+
+  padding:28px;
+
+  background:#FFFFFF;
+
+  border:1px solid #E6EEF8;
+
+  border-radius:24px;
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.05);
+
+  transition:
+    transform .3s,
+    box-shadow .3s,
+    border-color .3s;
+
+}
+
+.card:hover{
+
+  transform:translateY(-6px);
+
+  border-color:#D3E7FF;
+
+  box-shadow:
+    0 18px 40px rgba(0,91,172,.12);
+
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header{
+
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:18px;
+
+  margin-bottom:22px;
+
+}
+
+.iconWrapper{
+
+  width:68px;
+  height:68px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;
+
+  border-radius:18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #EDF6FF,
+      #DDEEFF
+    );
+
+  color:#005BAC;
+
+}
+
+.headerContent{
+
+  flex:1;
+
+}
+
+.badge{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  padding:6px 14px;
+
+  margin-bottom:12px;
+
+  border-radius:999px;
+
+  background:#EAF4FF;
+
+  color:#005BAC;
+
+  font-size:13px;
+
+  font-weight:600;
+
+}
+
+.title{
+
+  margin:0;
+
+  color:#153A6F;
+
+  font-size:22px;
+
+  font-weight:700;
+
+  line-height:1.45;
+
+}
+
+/* =====================================================
+   ADDRESS
+===================================================== */
+
+.addressSection{
+
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:12px;
+
+  flex:1;
+
+  margin-bottom:26px;
+
+}
+
+.addressIcon{
+
+  margin-top:3px;
+
+  color:#005BAC;
+
+  flex-shrink:0;
+
+}
+
+.address{
+
+  margin:0;
+
+  color:#667085;
+
+  line-height:1.8;
+
+  font-size:15px;
+
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.button{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:16px;
+
+  padding:16px 20px;
+
+  border-radius:16px;
+
+  background:#005BAC;
+
+  color:#FFFFFF;
+
+  text-decoration:none;
+
+  transition:
+    background .3s,
+    transform .3s;
+
+}
+
+.button:hover{
+
+  background:#004A92;
+
+}
+
+.buttonContent{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  font-size:15px;
+
+  font-weight:600;
+
+}
+
+.arrow{
+
+  transition:transform .3s;
+
+}
+
+.button:hover .arrow{
+
+  transform:translateX(5px);
+
+}
+
+/* =====================================================
+   LARGE TABLET
+===================================================== */
+
+@media (max-width:1200px){
+
+.card{
+
+padding:24px;
+
+}
+
+.title{
+
+font-size:20px;
+
+}
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:991px){
+
+.card{
+
+padding:22px;
+
+}
+
+.header{
+
+gap:16px;
+
+margin-bottom:20px;
+
+}
+
+.iconWrapper{
+
+width:62px;
+height:62px;
+
+}
+
+.title{
+
+font-size:19px;
+
+}
+
+.address{
+
+font-size:14px;
+
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+.card{
+
+padding:20px;
+
+border-radius:20px;
+
+}
+
+.header{
+
+gap:14px;
+
+}
+
+.iconWrapper{
+
+width:58px;
+height:58px;
+
+border-radius:16px;
+
+}
+
+.badge{
+
+font-size:12px;
+
+padding:5px 12px;
+
+}
+
+.title{
+
+font-size:18px;
+
+}
+
+.address{
+
+font-size:14px;
+
+line-height:1.7;
+
+}
+
+.button{
+
+padding:15px 18px;
+
+}
+
+.buttonContent{
+
+font-size:14px;
+
+}
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width:576px){
+
+.card{
+
+padding:18px;
+
+}
+
+.header{
+
+flex-direction:column;
+
+gap:16px;
+
+}
+
+.iconWrapper{
+
+width:54px;
+height:54px;
+
+}
+
+.title{
+
+font-size:17px;
+
+}
+
+.addressSection{
+
+margin-bottom:22px;
+
+}
+
+.button{
+
+padding:14px 16px;
+
+}
+
+}

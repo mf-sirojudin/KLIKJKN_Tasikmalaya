@@ -1,0 +1,96 @@
+/* =====================================================
+   DESKTOP CONTAINER
+===================================================== */
+
+.desktopContainer{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navigation{
+  display:flex;
+  align-items:center;
+  gap:34px;
+}
+
+.navigation a{
+  position:relative;
+
+  text-decoration:none;
+
+  font-size:15px;
+  font-weight:600;
+
+  color:var(--text-primary);
+
+  transition:var(--transition);
+}
+
+.navigation a:hover{
+  color:var(--primary-blue);
+}
+
+/* =====================================================
+   ACTIVE
+===================================================== */
+
+.active{
+  color:var(--primary-blue)!important;
+}
+
+.active::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-10px;
+
+  width:100%;
+  height:3px;
+
+  border-radius:999px;
+
+  background:var(--primary-green);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:1199px){
+
+.desktopContainer{
+
+gap:22px;
+
+}
+
+.navigation{
+
+gap:28px;
+
+}
+
+.navigation a{
+
+font-size:14px;
+
+}
+
+}
+
+@media (max-width:991px){
+
+.desktopContainer{
+
+display:none;
+
+}
+
+}

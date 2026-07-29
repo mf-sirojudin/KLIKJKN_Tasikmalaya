@@ -1,0 +1,367 @@
+/* =====================================================
+   SERVICE CARD
+===================================================== */
+
+.card{
+  display:flex;
+  flex-direction:column;
+
+  height:100%;
+  min-height:290px;
+
+  padding:28px;
+
+  background:#FFFFFF;
+
+  border:1px solid #E8EEF5;
+  border-radius:22px;
+
+  box-shadow:
+    0 10px 28px rgba(15,40,70,.05);
+
+  text-decoration:none;
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+
+  margin-bottom:18px;
+}
+
+.iconWrapper{
+  flex-shrink:0;
+}
+
+.icon{
+  width:68px;
+  height:68px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:18px;
+
+  background:#EDF5FF;
+  color:#005BAC;
+
+  transition:all .35s ease;
+}
+
+/* =====================================================
+   ICON COLORS
+===================================================== */
+
+.blue{
+  background:#E8F2FF;
+  color:#005BAC;
+}
+
+.green{
+  background:#E9F9EE;
+  color:#2EAF55;
+}
+
+.cyan{
+  background:#EAF8FF;
+  color:#00A6D6;
+}
+
+.emerald{
+  background:#EAFBF4;
+  color:#16A34A;
+}
+
+.orange{
+  background:#FFF2E8;
+  color:#F97316;
+}
+
+.yellow{
+  background:#FFF9E8;
+  color:#EAB308;
+}
+
+.purple{
+  background:#F4EEFF;
+  color:#7C3AED;
+}
+
+.teal{
+  background:#E8FBFB;
+  color:#0F9D94;
+}
+
+.headerContent{
+  flex:1;
+  min-width:0;
+}
+
+.title{
+  font-size:20px;
+  font-weight:700;
+  line-height:1.45;
+  color:#153A6F;
+
+  transition:.3s;
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.description{
+  flex:1;
+
+  font-size:15px;
+  line-height:1.75;
+  color:#667085;
+
+  margin-bottom:26px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.more{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  margin-top:auto;
+
+  font-size:15px;
+  font-weight:600;
+
+  color:#005BAC;
+
+  transition:.3s;
+}
+
+.more svg{
+  transition:transform .3s ease;
+}
+
+.blue ~ .more,
+.card:has(.blue) .more{
+    color:#005BAC;
+}
+
+.green ~ .more,
+.card:has(.green) .more{
+    color:#2EAF55;
+}
+
+.cyan ~ .more,
+.card:has(.cyan) .more{
+    color:#00A6D6;
+}
+
+.emerald ~ .more,
+.card:has(.emerald) .more{
+    color:#16A34A;
+}
+
+.orange ~ .more,
+.card:has(.orange) .more{
+    color:#F97316;
+}
+
+.yellow ~ .more,
+.card:has(.yellow) .more{
+    color:#EAB308;
+}
+
+.purple ~ .more,
+.card:has(.purple) .more{
+    color:#7C3AED;
+}
+
+.teal ~ .more,
+.card:has(.teal) .more{
+    color:#0F9D94;
+}
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.card:hover{
+
+  transform:translateY(-8px);
+
+  border-color:#005BAC;
+
+  box-shadow:
+    0 18px 42px rgba(0,91,172,.14);
+
+}
+
+.card:hover .icon{
+
+    transform:scale(1.08);
+
+    filter:brightness(.96);
+
+}
+
+.card:hover .title{
+
+  color:#005BAC;
+
+}
+
+.card:hover .more svg{
+
+  transform:translateX(6px);
+
+}
+
+/* =====================================================
+   ACTIVE
+===================================================== */
+
+.card:active{
+
+  transform:translateY(-3px);
+
+}
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (max-width:1200px){
+
+.card{
+padding:26px;
+min-height:280px;
+}
+
+.icon{
+width:64px;
+height:64px;
+}
+
+.title{
+font-size:19px;
+}
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:991px){
+
+.card{
+padding:24px;
+min-height:270px;
+}
+
+.header{
+gap:16px;
+}
+
+.icon{
+width:60px;
+height:60px;
+border-radius:16px;
+}
+
+.title{
+font-size:18px;
+}
+
+.description{
+font-size:14px;
+line-height:1.7;
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+.card{
+padding:22px;
+border-radius:20px;
+min-height:auto;
+}
+
+.header{
+gap:14px;
+}
+
+.icon{
+width:56px;
+height:56px;
+border-radius:15px;
+}
+
+.title{
+font-size:17px;
+}
+
+.description{
+margin-bottom:22px;
+}
+
+.more{
+font-size:14px;
+}
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width:576px){
+
+.card{
+padding:20px;
+}
+
+.header{
+gap:12px;
+}
+
+.icon{
+width:52px;
+height:52px;
+border-radius:14px;
+}
+
+.title{
+font-size:16px;
+line-height:1.4;
+}
+
+.description{
+font-size:14px;
+line-height:1.65;
+margin-bottom:18px;
+}
+
+.more{
+font-size:14px;
+}
+
+}

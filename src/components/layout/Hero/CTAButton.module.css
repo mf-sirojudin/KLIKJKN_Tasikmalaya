@@ -1,0 +1,128 @@
+/* =====================================================
+   CTA BUTTON
+===================================================== */
+
+.button{
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+
+  padding:18px 32px;
+
+  border:none;
+  border-radius:999px;
+
+  background:linear-gradient(
+    135deg,
+    #005BAC 0%,
+    #0A6FD6 100%
+  );
+
+  color:#ffffff;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  box-shadow:
+    0 12px 30px rgba(0,91,172,.25);
+
+  transition:all .3s ease;
+
+  text-decoration:none;
+}
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.icon{
+
+  transition:transform .3s ease;
+
+}
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.button:hover{
+
+  transform:translateY(-3px);
+
+  background:linear-gradient(
+    135deg,
+    #004A8D 0%,
+    #005BAC 100%
+  );
+
+  box-shadow:
+    0 18px 38px rgba(0,91,172,.32);
+
+}
+
+.button:hover .icon{
+
+  transform:translateX(5px);
+
+}
+
+/* =====================================================
+   ACTIVE
+===================================================== */
+
+.button:active{
+
+  transform:translateY(0);
+
+  box-shadow:
+    0 8px 20px rgba(0,91,172,.20);
+
+}
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.button:focus-visible{
+
+  outline:3px solid rgba(52,168,83,.35);
+
+  outline-offset:4px;
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:991px){
+
+.button{
+
+justify-content:center;
+
+}
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:576px){
+
+.button{
+
+width:100%;
+
+padding:16px 24px;
+
+font-size:15px;
+
+}
+
+}
