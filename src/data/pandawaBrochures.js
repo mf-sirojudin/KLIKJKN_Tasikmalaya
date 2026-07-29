@@ -217,6 +217,10 @@ const pandawaBrochures = [
     actionText: "Buka Brosur",
     url: "https://drive.google.com/file/d/1_GGdnlm0P0HMo_AN8A72P_1kOAsUOXAN/view?usp=drive_link",
   },
+
+  /* Silahkan tambahkan data baru dibawah ini,
+  dengan format sesuai dengan diatas */
+  
 ];
 
 export default pandawaBrochures;
