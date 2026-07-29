@@ -1,6 +1,8 @@
 import { FileText } from "lucide-react";
 
 const pandawaBrochures = [
+  /* Jika ada perubahan data, Silahkan update data dibawah ini.
+  Jika ada penambahan data, silahkan tambahkan di bagian akhir sourcecode*/
   {
     id: 1,
     title: "Cara Mengakses PANDAWA",
