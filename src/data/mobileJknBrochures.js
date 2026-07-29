@@ -88,6 +88,10 @@ const mobileJknBrochures = [
     actionText: "Buka Brosur",
     url: "https://drive.google.com/file/d/1onvduvkGla8aFs20Z2G_9I_MwTLUwsQJ/view?usp=drive_link",
   },
+
+  /* Silahkan tambahkan data baru dibawah ini,
+  dengan format sesuai dengan diatas */
+  
 ];
 
 export default mobileJknBrochures;
