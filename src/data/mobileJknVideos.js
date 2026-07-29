@@ -110,6 +110,10 @@ const mobileJknVideos = [
     actionText: "Lihat Video",
     url: "https://drive.google.com/file/d/1LAEG32NLoBLO-VfaeadDQCxqNNAnGXYK/view?usp=drive_link",
   },
+
+  /* Silahkan tambahkan data baru dibawah ini,
+  dengan format sesuai dengan diatas */
+  
 ];
 
 export default mobileJknVideos;
