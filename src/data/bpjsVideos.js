@@ -143,6 +143,10 @@ const bpjsVideos = [
     actionText: "Lihat Video",
     url: "https://drive.google.com/file/d/1MdZjiBpKrUG8tTkrqI1jiOQ0YMOLVnUl/view?usp=drive_link",
   },
+
+  /* Silahkan tambahkan data baru dibawah ini,
+  dengan format sesuai dengan diatas */
+  
 ];
 
 export default bpjsVideos;
