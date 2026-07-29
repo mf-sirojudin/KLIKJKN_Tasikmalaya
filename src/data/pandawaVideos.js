@@ -33,6 +33,10 @@ const pandawaVideos = [
     actionText: "Lihat Video",
     url: "https://drive.google.com/file/d/11LdElAkvGWnS50g7a8gU7Zrbp7bJ1Zrf/view?usp=drive_link",
   },
+
+  /* Silahkan tambahkan data baru dibawah ini,
+  dengan format sesuai dengan diatas */
+  
 ];
 
 export default pandawaVideos;
