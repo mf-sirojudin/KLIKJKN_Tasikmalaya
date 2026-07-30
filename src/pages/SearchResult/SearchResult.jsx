@@ -9,6 +9,7 @@ import Footer from "../../components/layout/Footer/Footer";
 
 import ResourceCard from "../../components/Resources/ResourceCard";
 import BPJSSatuCard from "../../components/BPJSSatu/BPJSSatuCard";
+import SEO from "../../components/common/SEO";
 
 import { searchResources } from "../../utils/searchUtils";
 

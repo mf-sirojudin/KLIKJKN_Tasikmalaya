@@ -6,6 +6,7 @@ import Footer from "../../components/layout/Footer/Footer";
 
 import CareCenterCard from "../../components/contact/CareCenterCard";
 import OfficeCard from "../../components/contact/OfficeCard";
+import SEO from "../../components/common/SEO";
 
 import contactOfficeData from "../../data/contactOfficeData";
 
