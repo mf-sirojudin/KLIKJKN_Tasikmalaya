@@ -23,6 +23,11 @@ function SearchResult() {
 
   return (
     <>
+      <SEO
+          title="Hasil Pencarian | KLIK JKN Tasik"
+          description="Temukan informasi layanan BPJS Kesehatan dengan cepat melalui fitur pencarian KLIK JKN Tasik."
+      />
+
       <Navbar />
 
       <main className={styles.page}>

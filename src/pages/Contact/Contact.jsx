@@ -14,6 +14,11 @@ import styles from "./Contact.module.css";
 function Contact() {
   return (
     <>
+      <SEO
+          title="Kontak | KLIK JKN Tasik"
+          description="Informasi lokasi kantor BPJS Kesehatan dan Care Center 165"
+      />
+
       <Navbar />
 
       <main className={styles.page}>
