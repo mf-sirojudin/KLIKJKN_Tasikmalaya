@@ -12,10 +12,13 @@ import NotFound from "../pages/NotFound/NotFound";
 
 import ScrollToHash from "../components/common/ScrollToHash";
 import ScrollToTop from "../components/common/ScrollToTop";
+import GoogleAnalytics from "../components/common/GoogleAnalytics";
 
 function AppRouter() {
   return (
     <BrowserRouter>
+
+      <GoogleAnalytics />
 
        {/* Scroll otomatis ke #hash */}
       <ScrollToHash />
