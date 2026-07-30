@@ -37,7 +37,18 @@ const pandawaVideos = [
   },
 
   /* Silahkan tambahkan data baru dibawah ini,
-  dengan format sesuai dengan diatas */
+  dengan format sesuai dengan diatas.
+  Contoh:
+  {
+    id: 4,
+    title: "Selayang Pandang Layanan PANDAWA",
+    description:
+      "Video pengenalan layanan administrasi kepesertaan BPJS Kesehatan melalui Pelayanan Administrasi melalui WhatsApp (PANDAWA).",
+    icon: PlayCircle,
+    color: "blue",
+    actionText: "Lihat Video",
+    url: "https://drive.google.com/file/d/11LdElAkvGWnS50g7a8gU7Zrbp7bJ1Zrf/view?usp=drive_link",
+  }, */
   
 ];
 
